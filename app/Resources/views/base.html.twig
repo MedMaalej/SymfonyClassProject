@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+			<link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" />
+		{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+	   
+        <div id="header">
+			<div id="titre">
+				<div style="float:left">
+					<img src="{{ asset('images/body-bg.png')}}" height="80" />
+				</div>
+				<div style="float:left; margin:25px">Centre de Formation</div>
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+			    <li>Formation</li>
+				
+				<li><a href="{{path('formation_new') }}">Ajouter</a></li>
+				<li><a href="{{path('formation') }}">Liste</a></li>
+				
+				
+			</ul>
+			
+		</div>
+		{% block body%}
+		<div id="contenu">
+				
+		</div>
+		{% endblock %}
+		{% block javascripts%}
+
+		{% endblock %}
+		
+    </body>
+</html>

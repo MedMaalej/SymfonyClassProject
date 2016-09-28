@@ -1,0 +1,9 @@
+formation_formation:
+    resource: "@FormationFormationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+formindex:
+    resource: "@FormationFormationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
